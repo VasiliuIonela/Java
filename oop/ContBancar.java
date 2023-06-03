@@ -7,8 +7,6 @@ public class ContBancar {
     boolean activ= false;
     private int pin= 7777;
     int incercariActivare;
-    //constructor are rolul de a impune date de start
-    // ca si * din formulare, required fields
 
     public ContBancar(String titularCont, String iban) {
         this.titularCont = titularCont;
