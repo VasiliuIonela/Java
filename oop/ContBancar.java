@@ -1,22 +1,6 @@
 package oop;
 
 public class ContBancar {
-    //program files=definim logica unui cont bancar
-
-    //o clasa= un tip nou , este definitia unui concept
-    //ex: clasa Car
-
-    //un obiect= instanta unei clase
-    //ex: obiect de tip Car
-
-    //fields=proprietati=atribute
-    //variabile
-    //ex: culoare, marca, model, consum, pret,
-
-    //metode= actiuni ce pot fi facute de obiecte
-    //functii
-    //ex accelereaza(), franeaza(), deschideUsa()
-
     String titularCont;
     String iban;
     double sold = 0;
@@ -30,7 +14,7 @@ public class ContBancar {
         this.titularCont = titularCont;
         this.iban = iban;
     }
-    //metode
+ 
     public void interogareSold(){
         System.out.println("Titular " + this.titularCont);
         System.out.println("Iban " + this.iban);
@@ -41,7 +25,6 @@ public class ContBancar {
     }
 
     public void activareCont(int pinUtilizator){
-        //modifica activ in true doar daca pin e corect
         System.out.println("Buna, " + this.titularCont);
         if (pinUtilizator ==this.pin) {
             System.out.println("Contul a fost activat cu succes");
@@ -53,7 +36,6 @@ public class ContBancar {
         }
     }
     public void alimentareCont(double  suma_depusa){
-        //la ce aveam in cont(this.sold) se adauga suma depusa
         this.sold  += suma_depusa;
         System.out.println("Buna, " +this.titularCont);
         System.out.println("Ati depus cu succes suma de: " + suma_depusa+" Aveti in cont suma de: " + this.sold);
@@ -61,7 +43,6 @@ public class ContBancar {
 
     public void plataCard(double suma_cheltuita){
         System.out.println("Buna, "+ this.titularCont);
-        //daca suma cheltuita <= this.sold
         if (suma_cheltuita<= this.sold){
             this.sold-= suma_cheltuita;
             System.out.println("Ai cheltuit: "+ suma_cheltuita);
@@ -73,8 +54,4 @@ public class ContBancar {
 
     }
 
-    //mosteniri-inheritance
-    //polimorphism
-    //envapsulation
-    //abstarctization
 }
