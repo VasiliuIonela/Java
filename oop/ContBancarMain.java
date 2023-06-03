@@ -2,8 +2,6 @@ package oop;
 
 public class ContBancarMain {
     public static void main(String[] args) {
-        //initializam obiecte de tip ContBancar
-        // instante ale clasei ContBancar
 
         ContBancar cont1 = new ContBancar("Gigel", "RO001");
         ContBancar cont2 =  new ContBancar("Maricel", "RO002");
@@ -11,7 +9,6 @@ public class ContBancarMain {
        /* cont1.descriere();
         cont2.descriere();*/
 
-        //activam conturile
         cont1.activareCont(7777);
         cont2.activareCont(3333);
         cont2.activareCont(4444);
